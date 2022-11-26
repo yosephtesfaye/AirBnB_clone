@@ -4,7 +4,7 @@ import cmd
 import sys
 import json
 import os
-from models import storage
+from models.engine import file_storage
 from models.base_model import BaseModel
 from models.user import User
 from models.place import Place

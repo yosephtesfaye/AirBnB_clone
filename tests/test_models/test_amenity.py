@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+<<<<<<< HEAD
 """Defines unittests for models/amenity.py.
 Unittest classes:
     TestAmenity_instantiation
@@ -187,3 +188,20 @@ class TestAmenity_to_dict(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+=======
+""" testing Amenity """
+import unittest
+import pep8
+from models.amenity import Amenity
+
+class Amenity_testing(unittest.TestCase):
+    """ check BaseModel """
+
+    def testpep8(self):
+        """ testing codestyle """
+        pepstylecode = pep8.StyleGuide(quiet=True)
+        path_user = 'models/amenity.py'
+        result = pepstylecode.check_files([path_user])
+        self.assertEqual(result.total_errors, 0,
+                         "Found code style errors (and warnings).")
+>>>>>>> c87c406edb7130ed6b26dca0105301a7d197c9f5

@@ -1,9 +1,15 @@
 #!/usr/bin/python3
+<<<<<<< HEAD
 """Defines the Place class."""
+=======
+""" Class Place """
+
+>>>>>>> c87c406edb7130ed6b26dca0105301a7d197c9f5
 from models.base_model import BaseModel
 
 
 class Place(BaseModel):
+<<<<<<< HEAD
     """Represent a place.
     Attributes:
         city_id (str): The City id.
@@ -19,6 +25,9 @@ class Place(BaseModel):
         amenity_ids (list): A list of Amenity ids.
     """
 
+=======
+    """ Place class that inherits BaseModel """
+>>>>>>> c87c406edb7130ed6b26dca0105301a7d197c9f5
     city_id = ""
     user_id = ""
     name = ""

@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+<<<<<<< HEAD
 """Defines unittests for models/city.py.
 Unittest classes:
     TestCity_instantiation
@@ -192,3 +193,20 @@ class TestCity_to_dict(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+=======
+""" testing city """
+import unittest
+import pep8
+from models.city import City
+
+class City_testing(unittest.TestCase):
+    """ check BaseModel """
+
+    def testpep8(self):
+        """ testing codestyle """
+        pepstylecode = pep8.StyleGuide(quiet=True)
+        path_user = 'models/city.py'
+        result = pepstylecode.check_files([path_user])
+        self.assertEqual(result.total_errors, 0,
+                         "Found code style errors (and warnings).")
+>>>>>>> c87c406edb7130ed6b26dca0105301a7d197c9f5

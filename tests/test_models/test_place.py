@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+<<<<<<< HEAD
 """Defines unittests for models/place.py.
 Unittest classes:
     TestPlace_instantiation
@@ -246,3 +247,20 @@ class TestPlace_to_dict(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+=======
+""" testing Place """
+import unittest
+import pep8
+from models.place import Place
+
+class Place_testing(unittest.TestCase):
+    """ check BaseModel """
+
+    def testpep8(self):
+        """ testing codestyle """
+        pepstylecode = pep8.StyleGuide(quiet=True)
+        path_user = 'models/place.py'
+        result = pepstylecode.check_files([path_user])
+        self.assertEqual(result.total_errors, 0,
+                         "Found code style errors (and warnings).")
+>>>>>>> c87c406edb7130ed6b26dca0105301a7d197c9f5
